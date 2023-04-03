@@ -1,5 +1,5 @@
-import LanguageContext from "./Language/LanguageContext";
-import LanguageProvider from "./Language/LanguageProvider";
+import LanguageContext from "./language/LanguageContext";
+import LanguageProvider from "./language/LanguageProvider";
 
 export {
     LanguageContext,
