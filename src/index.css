@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #252525;
+}
+
+.jezik-inputs:checked + .jezik-labels {
+  background: #e0e0e0;
+  box-shadow: inset 3px 3px 1px #bebebe, inset -3px -3px 1px #f6f6f6;
+  color: #1c64f2;
+}
+
+.jezik-labels {
+  background: #e0e0e0;
+  /* box-shadow: 3px 3px 1px #cacaca, -3px -3px 1px #f6f6f6; */
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.jezik-labels:hover {
+  box-shadow: inset 3px 3px 1px #bebebe, inset -3px -3px 1px #f6f6f6;
+}
