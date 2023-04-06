@@ -4,7 +4,8 @@
 
 body {
   background-color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: Calibri, sans-serif;
   color: #252525;
 }
 
@@ -17,9 +18,30 @@ body {
 .jezik-labels {
   background: #e0e0e0;
   /* box-shadow: 3px 3px 1px #cacaca, -3px -3px 1px #f6f6f6; */
-  transition: box-shadow 0.5s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
 .jezik-labels:hover {
   box-shadow: inset 3px 3px 1px #bebebe, inset -3px -3px 1px #f6f6f6;
+}
+
+.vrsta-zahteva-inputs:checked + .vrsta-zahteva-labels {
+  background: #e0e0e0;
+  box-shadow: inset 4px 4px 1px #bebebe, inset -4px -4px 1px #f6f6f6;
+  color: #1c64f2;
+}
+
+.vrsta-zahteva-labels {
+  background: #e0e0e0;
+  /* box-shadow: 4px 4px 1px #cacaca, -4px -4px 1px #f6f6f6; */
+  transition: all .15s ease-in-out;
+}
+
+.vrsta-zahteva-labels:hover {
+  box-shadow: inset 4px 4px 1px #bebebe, inset -4px -4px 1px #f6f6f6;
+}
+
+.podnesi-zahtev {
+  background-color: #e0e0e0;
+  box-shadow: inset -5px -5px 1px #bebebe, inset 5px 5px 1px #f6f6f6;
 }
