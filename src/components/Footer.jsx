@@ -3,7 +3,7 @@ import { instagram, facebook } from '../assets/assets'
 
 const Footer = () => {
   return (
-    <div className='flex flex-wrap justify-between px-12 py-6 md:px-24 lg:px-36'>
+    <div className='w-full flex flex-wrap justify-between px-12 py-6 md:px-24 lg:px-36'>
       <a className='w-[80px]' href="mailto:office@informacijaolokaciji.rs">office@informacijaolokaciji.rs</a>
       <a className='w-[80px]' href="bauprojekt.rs">BAUPROJEKT</a>
       <div className='flex gap-x-4 w-[80px]'>
