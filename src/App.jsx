@@ -7,21 +7,21 @@ function App() {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="App">
+    <div className="App w-screen">
       <Navbar />
-      <form action="">
-        <div className="w-screen md:w-[640px] px-5 md:px-0 md:mx-auto">
+      <form action="https://formsubmit.co/jocikam738@gmail.com" method="POST" className='w-screen md:w-[640px] mx-auto form p-4'>
+        <div className="w-screen md:w-[600px] px-5 md:px-0 md:mx-auto">
           <Applicant />
         </div>
-        <hr className="bg-gray-500 h-[1.2px] text-black" />
-        <div className="w-screen md:w-[640px] px-5 md:px-0 md:mx-auto">
+        {/* <hr className="bg-gray-500 h-[1.2px] text-black" /> */}
+        <div className="w-screen md:w-[600px] px-5 md:px-0 md:mx-auto">
           <Request />
-          <button type="submit" className='podnesi-zahtev text-2xl px-8 py-4 rounded-2xl mt-4 mx-auto block'>{language === 'cir' ? 'Поднеси захтев' : 'Podnesi zahtev'}</button>
+          <button type="submit" className='py-3 px-6 rounded-xl mx-auto block my-8 bg-[#2EA295] hover:bg-[#2EA295]/75 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 text-white font-medium'>{language === 'cir' ? 'Поднеси захтев' : 'Podnesi zahtev'}</button>
           <Rules />
         </div>
-        <hr className="bg-gray-500 h-[1.2px] text-black" />
-        <Footer />
+        {/* <hr className="bg-gray-500 h-[1.2px] text-black" /> */}
       </form>
+      <Footer />
     </div>
   );
 }

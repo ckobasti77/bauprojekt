@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import LanguageContext from './LanguageContext';
 
 const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('cir');
+  const [language, setLanguage] = useState('');
+
+  useEffect(() => {
+    setLanguage('cir')
+  }, [])
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
