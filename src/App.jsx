@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { LanguageContext } from "./context/context";
 
 import { Navbar, Applicant, Request, Rules, Footer } from "./components/components";
@@ -6,9 +6,15 @@ import { Navbar, Applicant, Request, Rules, Footer } from "./components/componen
 function App() {
   const { language } = useContext(LanguageContext);
 
+  const [background, setBackground] = useState(false);
+
+  useEffect(() => {
+    console.log(background);
+  }, [background])
+
   return (
-    <div className="App w-full">
-      <Navbar />
+    <div className={`App w-full ${background ? 'bg-[url(/./bg.jpg)]' : 'bg-[url(/./bg6.jpg)]'}`}>
+      <Navbar background={background} setBackground={setBackground}/>
       <form action="https://formsubmit.co/jocikam738@gmail.com" method="POST" className='w-full md:w-[640px] mx-auto form p-4'>
         <div className="w-full md:w-[600px] md:px-0 md:mx-auto">
           <Applicant />
